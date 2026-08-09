@@ -13,4 +13,4 @@ Simple CNN
 Epoch: 10
 
 Test Accuracy:
-0.6948%
+69.48%
