@@ -26,3 +26,8 @@ def train(model, train_loader, epochs=10):
             total_loss += loss.item()
 
         print(f"epoch {epoch+1}, loss={total_loss/len(train_loader):.4f}")
+
+    torch.save(
+    model.state_dict(),
+    "cnn_cifar10.pth"
+)
