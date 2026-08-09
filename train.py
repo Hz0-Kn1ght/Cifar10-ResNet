@@ -29,5 +29,5 @@ def train(model, train_loader, epochs=10):
 
     torch.save(
     model.state_dict(),
-    "cnn_cifar10.pth"
+    "resnet18.pth"
 )

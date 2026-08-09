@@ -1,20 +1,22 @@
-# CIFAR10-ResNet
+# CIFAR-10 ResNet
 
-## Models
+A PyTorch implementation of ResNet18 on CIFAR-10.
 
-### CNN Baseline
-
-Epoch:
-10
-
-Accuracy:
-69.48%
+Compare a simple CNN baseline with ResNet.
 
 
-### ResNet18
+## Structure
 
-Epoch:
-10
+models/
+    resnet.py
 
-Accuracy:
-87.10%
+dataset.py
+train.py
+test.py
+
+## Results
+
+|   Model  | Accuracy |
+|----------|----------|
+| CNN      |  69.48%  |
+| ResNet18 |  87.10%  |
