@@ -1,6 +1,6 @@
 import torch
 from dataset import get_dataloader
-from model import CNN
+from models.ResNet18 import ResNet
 from train import train
 from test import test
 
@@ -12,7 +12,7 @@ print(images.shape)
 print(labels.shape)
 print(labels[:10])
 
-model = CNN()
+model = ResNet()
 x = torch.randn(64, 3, 32, 32)
 y = model(x)
 print(y.shape)

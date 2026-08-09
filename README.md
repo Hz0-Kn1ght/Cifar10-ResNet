@@ -1,16 +1,20 @@
-# CIFAR10 CNN
+# CIFAR10-ResNet
 
-## Dataset
+## Models
 
-CIFAR-10
+### CNN Baseline
 
-## Model
+Epoch:
+10
 
-Simple CNN
-
-## Result
-
-Epoch: 10
-
-Test Accuracy:
+Accuracy:
 69.48%
+
+
+### ResNet18
+
+Epoch:
+10
+
+Accuracy:
+87.10%
