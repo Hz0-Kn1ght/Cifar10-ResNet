@@ -1,7 +1,6 @@
 import torch
 
-def test(model, test_loader):
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+def evaluate(model, test_loader, device):
 
     model.to(device)
     model.eval()
@@ -13,10 +12,10 @@ def test(model, test_loader):
 
         for images, labels in test_loader:
 
-            imgaes = images.to(device)
+            images = images.to(device)
             labels = labels.to(device)
 
-            outputs = model(imgaes)
+            outputs = model(images)
 
             predictions = outputs.argmax(dim=1)
 
@@ -25,4 +24,4 @@ def test(model, test_loader):
 
     accuracy = correct / total
 
-    print(f"Test Accuracy: {accuracy:.4f}")
+    return accuracy
